@@ -10,7 +10,7 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
-p {
+main p {
     padding: 10px;
     color: steelblue; 
 }
