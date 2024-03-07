@@ -11,7 +11,7 @@ main img {
 }
 
 p {
-    padding: 0px;
+    padding: 10px;
     color: steelblue; 
 }
 
@@ -42,6 +42,7 @@ aside {
 
 aside p {
     color: black;
+    padding: 0;
 }
 
 aside img {
