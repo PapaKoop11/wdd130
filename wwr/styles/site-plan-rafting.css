@@ -5,18 +5,28 @@ body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    
 }
 
+/* CSS HEX 
+--egyptian-blue: #29339bff;
+--columbia-blue: #b9d6f2ff;
+--kelly-green: #38b000ff;
+--asparagus: #6baa75ff;
+--sgbus-green: #84dd63ff;
+--lime: #cbff4dff;
+*/
+
 :root {
-    --primary-color: blue;
-    --secondary-color: green;
-    --accent1-color: red;
-    --accent2-color: black;
+    --primary-color: #29339bff;
+    --secondary-color: #38b000ff;
+    --accent1-color: #cbff4dff;
+    --accent2-color: #6baa75ff;
 
     --heading-font: 'Amaranth', sans-serif;
     --paragraph-font: 'Adamina', serif;
 
-    --nav-background-color: yellow;
+    --nav-background-color: #84dd63ff;
     --nav-link-color:var(--primary-color);
     --nav-hover-link-color:var(--accent1-color);
     --nav-hover-background-color:var(--secondary-color);
@@ -50,7 +60,7 @@ nav a {
 }
 
 nav a:link, nav a:visited {
-    color: var(--nav-hover-link-color);
+    color: var(--nav-link-color);
 }
 
 nav a:hover {
