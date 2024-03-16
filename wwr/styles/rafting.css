@@ -70,6 +70,7 @@ nav a:hover {
 
 .hero {
     position: relative;
+    margin-top: 12px;
 }
 
 .hero img {
