@@ -20,7 +20,7 @@ main img {
 
 main p {
     padding: 10px;
-    color: 006400; 
+    color: #006400; 
 }
 
 nav {
@@ -35,7 +35,7 @@ nav a {
 }
 
 h1 {
-    color: 006400;
+    color: #006400;
     text-align: center;
 }
 
@@ -69,7 +69,7 @@ footer {
     text-align: center;
 }
 
-/* Class selectors */
+/* Class Selectors */
 
 .box {
     margin: 1rem;
@@ -80,5 +80,5 @@ footer {
 }
 
 .box a {
-    color: whitesmoke;
+    color: lightgreen;
 }
