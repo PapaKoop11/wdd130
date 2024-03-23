@@ -145,9 +145,44 @@ nav a:hover {
 }
 
 .adventure-images {
-    display: grid;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); */
+    display: flex;
+    width: 100%;
+    border: 3px solid var(--primary-color);
+    justify-content: space-between;
+}
+
+.adventure-images figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.adventure-images img {  
+    max-width: auto; 
+    
+    max-height: 75px;
+    border: 3px solid var(--primary-color);
+    padding: 3px;
+}
+
+.adventure-images figcaption {
+    background-color: var(--primary-color);
+    color:#fff;
+    font-family: var(--heading-font);
+    font-size: small;
+    text-align: center;
+    padding: 3px;
+    max-width: 100%;
+}
+/* .adventure-images {
+    /* display: grid;
     grid-template-columns: repeat(5, 20%);
-    gap: 0px;
+    gap: 0px; 
+    display: flex;
+    justify-content: flex-start;
 }
 
 figure {
@@ -159,7 +194,7 @@ figure {
 figure img {
     border: var(--primary-color) solid 3px;
     padding: 3px;    
-    max-height: 50px;
+    max-height: 150px;
     width: auto;
     max-width: 100%;
 }
@@ -170,9 +205,9 @@ figcaption {
     text-align: center;
     font-family: var(--heading-font);
     font-size: smaller;
-    width: 100%;
+   
 
-}
+} */
 
 footer {
     display: block;
