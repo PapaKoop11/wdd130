@@ -5,7 +5,6 @@ body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
-    
 }
 
 /* CSS HEX 
@@ -40,7 +39,7 @@ h1,h2,h3,h4,h5,h6 {
 header {
     display: flex;
     margin: 2rem auto;
-    
+
     align-items: center;
     justify-content: space-around;
     padding: 20px;
@@ -145,12 +144,13 @@ nav a:hover {
 }
 
 .adventure-images {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    /* display: flex;
+    justify-content: space-between; */
     width: 100%;
     border: 3px solid var(--primary-color);
-    justify-content: space-between;
+    
 }
 
 .adventure-images figure {
@@ -162,7 +162,7 @@ nav a:hover {
 
 .adventure-images img {  
     max-width: auto; 
-    
+    min-height: 25px;
     max-height: 75px;
     border: 3px solid var(--primary-color);
     padding: 3px;
@@ -174,8 +174,8 @@ nav a:hover {
     font-family: var(--heading-font);
     font-size: small;
     text-align: center;
-    padding: 3px;
-    max-width: 100%;
+    padding: 6px;
+    width: 100%;
 }
 /* .adventure-images {
     /* display: grid;
@@ -210,23 +210,23 @@ figcaption {
 } */
 
 footer {
-    display: block;
-    justify-content: center;
-    align-content: center;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    border-top: var(--primary-color) solid 3px;
+    margin-top: 10px;  
+    width: 100%;  
 }
 
 footer .credits {
-    display: flex;
-    width: 100%;
-   
+    justify-self: center;
     font-size: small;
-    border-top: var(--primary-color) solid 3px;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 footer .social {
+    grid-column: 3/4;
     display: flex;
-    float: right;
+    justify-content: flex-end;
 }
 
 footer img {
