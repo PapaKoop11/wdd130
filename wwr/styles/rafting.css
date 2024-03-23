@@ -38,8 +38,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 header {
+    display: flex;
+    margin: 2rem auto;
+    
+    align-items: center;
+    justify-content: space-around;
     padding: 20px;
     background-color: var(--nav-background-color);
+    border-bottom: #000 solid 5px;
+}
+
+header img {
+    height: 100px;
+    width: auto;
 }
 
 p {
@@ -50,6 +61,7 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: space-between;
 }
 
 nav a {
@@ -57,6 +69,15 @@ nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    min-width: none;
 }
 
 nav a:link, nav a:visited {
@@ -86,7 +107,7 @@ nav a:hover {
     padding-right: 8px;
     position: absolute;
     left: 100px;
-    
+    font-size:xx-large;
 }
 
  .hero article {
@@ -103,6 +124,76 @@ nav a:hover {
     height: auto;
  }
 
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    
+}
 
+.section-header {
+    display: flex;
+    width: 100%;
+    border-bottom: #29339bff solid 3px;
+    padding-bottom: 10px;
+    justify-content: center;
+    font-size: xx-large;
+}
 
+.history img {
+    height: 200px;
+}
 
+.adventure-images {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    gap: 0px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    border: var(--primary-color) solid 3px;
+    padding: 3px;    
+    max-height: 50px;
+    width: auto;
+    max-width: 100%;
+}
+
+figcaption {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: smaller;
+    width: 100%;
+
+}
+
+footer {
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
+
+footer .credits {
+    display: flex;
+    width: 100%;
+   
+    font-size: small;
+    border-top: var(--primary-color) solid 3px;
+    margin-top: 25px;
+}
+
+footer .social {
+    display: flex;
+    float: right;
+}
+
+footer img {
+    max-height: 32px;
+}
