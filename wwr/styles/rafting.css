@@ -76,7 +76,7 @@ nav ul {
 }
 
 nav li {
-    min-width: none;
+    min-width: 5px;
 }
 
 nav a:link, nav a:visited {
@@ -161,7 +161,7 @@ nav a:hover {
 }
 
 .adventure-images img {  
-    max-width: auto; 
+    max-width: 150px; 
     min-height: 25px;
     max-height: 75px;
     border: 3px solid var(--primary-color);
