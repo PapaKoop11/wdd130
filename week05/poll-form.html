@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML form - User Poll</title>
+    <meta name="descrption" content="Learn how to build a form as a User Poll">
+    <meta name="author" content="Michael Wynkoop">
+    <link rel="stylesheet" href="./styles/poll_form.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Michael Wynkoop | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="useremail">Email Address</label>
+                <input type="email" id="useremail" name="useremail">
+
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="fav_browser">What is your favorite browser?</label>
+                <select id="fav_browser" name="fav_browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="brave">Brave</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+                <label for="places">List the places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Galesburg IL, Rexburg ID, Portland OR"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+        
+    </main>
+    <footer>
+        <P>&copy 2024 | HTML Form - User Poll | Michael Wynkoop
+    </footer>
+</body>
+</html>

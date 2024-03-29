@@ -1,0 +1,9 @@
+fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+fieldset input, select, textarea {
+    max-width: 300px;
+}
