@@ -1,9 +1,114 @@
-fieldset {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-fieldset input, select, textarea {
-    max-width: 300px;
+body {
+    font-family: 'Amaranth', sans-serif;
+    max-width: 960px;
+    padding: 20px;
+    
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color:navy;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    max-width: 450px;
+    background-color: blanchedalmond;
+    border: navy solid 3px;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 10px;
+    padding: 10px;
+    border: navy solid 2px;
+    border-radius: 15px;
+}
+
+legend {
+    color: navy;    
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+label, input, select, textarea, button {
+    font-family: Adamina, serif;
+    font-size: .9rem;
+}
+
+input, select, textarea {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+label {   
+    text-align: right;
+    padding-right: 10px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: blanchedalmond;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    width: fit-content;
+    justify-self: center;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1rem auto;
+    width: 450px;
+    text-align: center;
+    font-size: .8rem;
+    color: #777;
+    border-top: #ccc solid 2px;
+}
+
+label[for="places"]{
+    justify-self: center;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: .5rem;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
 }
