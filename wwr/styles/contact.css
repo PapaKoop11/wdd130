@@ -139,7 +139,7 @@ figcaption {
     border-bottom-right-radius: 15px;
 }
 
-form button {
+.button-styled {
     margin: 1rem;
     background-color: navy;
     color: blanchedalmond;
@@ -148,6 +148,19 @@ form button {
     font-size: 1.2rem;
     max-width: 450px;
     justify-self: right;
+}
+
+.check-it {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 10px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
 }
 
 .message-purpose {
