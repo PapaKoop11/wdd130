@@ -39,7 +39,6 @@ h1,h2,h3,h4,h5,h6 {
 header {
     display: flex;
     margin: 2rem auto;
-
     align-items: center;
     justify-content: space-around;
     padding: 20px;
@@ -96,12 +95,10 @@ fieldset {
     padding: 10px;
     border: navy solid 2px;
     border-radius: 15px;
-}
+}  
 
 .message {
-    
     width: 65%;
-    
 }
 
 .contacts {
@@ -109,6 +106,48 @@ fieldset {
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
+}
+
+.employee-photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-height: 250px;
+    margin: auto;
+}
+
+figure img {
+    max-height: 225px;
+    width: auto;
+    border: navy solid 2px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+  
+figcaption {
+    background-color: navy;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+form button {
+    margin: 1rem;
+    background-color: navy;
+    color: blanchedalmond;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    max-width: 450px;
+    justify-self: right;
 }
 
 .message-purpose {
@@ -200,4 +239,27 @@ figure figcaption {
     width: 100%;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    border-top: var(--primary-color) solid 3px;
+    margin-top: 10px;  
+    width: 100%;  
+}
+
+footer .credits {
+    justify-self: center;
+    font-size: small;
+    margin-top: 5px;
+}
+
+footer .social {
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer img {
+    max-height: 32px;
+}
 
