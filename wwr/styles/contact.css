@@ -121,7 +121,7 @@ figure {
     margin: auto;
 }
 
-figure img {
+.employee-photos img {
     max-height: 225px;
     width: auto;
     border: navy solid 2px;

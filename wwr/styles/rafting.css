@@ -39,7 +39,6 @@ h1,h2,h3,h4,h5,h6 {
 header {
     display: flex;
     margin: 2rem auto;
-
     align-items: center;
     justify-content: space-around;
     padding: 20px;
@@ -153,11 +152,33 @@ nav a:hover {
     
 }
 
+fieldset {
+    display: flex; 
+    flex-direction: column;   
+    margin: 10px;
+    padding: 10px;
+    border: navy solid 2px;
+    border-radius: 15px;
+}  
+
+.message {
+    width: 65%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
 figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding: 5px;
+    max-height: 250px;
+    margin: auto;
 }
 
 figure img {  
@@ -178,6 +199,115 @@ figure figcaption {
     padding: 6px;
     width: 100%;
 }
+
+.employee-photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.employee-photos figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-height: 250px;
+    margin: auto;
+}
+
+.employee-photos img {
+    max-height: 225px;
+    width: auto;
+    border: navy solid 2px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+  
+.employee-photos figcaption {
+    background-color: navy;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.button-styled {
+    margin: 1rem;
+    background-color: navy;
+    color: blanchedalmond;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    max-width: 450px;
+    justify-self: right;
+}
+
+.check-it {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 10px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+.message-purpose {
+    width: 30%;
+    justify-items: right;
+}
+
+.message-contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.co-info {
+    display: flex;
+    justify-content: space-between;
+    color: navy;
+    font-size: large;
+}
+
+.co-info img {
+    width: auto;
+    height: 225px;
+}
+
+.contact-type {
+    position: relative;
+    margin-top: 12px;
+    width: 30%
+}
+
+.radio-contact {
+    padding-top: 8px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    
+}
+
+.section-header {
+    display: flex;
+    width: 100%;
+    border-bottom: #29339bff solid 3px;
+    padding-bottom: 10px;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.history img {
+    height: 200px;
+}
+
 
 footer {
     display: grid;
